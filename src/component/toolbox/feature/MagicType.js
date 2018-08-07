@@ -147,7 +147,7 @@ proto.onclick = function (ecModel, api, type) {
                 for (var i = 0; i <= axisIndex; i++) {
                     newOption[axisType][axisIndex] = newOption[axisType][axisIndex] || {};
                 }
-                newOption[axisType][axisIndex].boundaryGap = type === 'bar' ? true : false;
+                newOption[axisType][axisIndex].boundaryGap = type === 'bar' || 'line'? true : false;
             }
         }
     };
